@@ -1,0 +1,417 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BDCDA7D-435E-4342-AE85-3D913673B871}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Carr</RootNamespace>
+    <AssemblyName>Carr</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44379</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="Admin\About.aspx" />
+    <Content Include="Admin\about.html" />
+    <Content Include="Admin\Addcat.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\Admin_Login.aspx" />
+    <Content Include="Admin\Admin_Ragisterr.aspx" />
+    <Content Include="Admin\assets\css\flex-slider.css" />
+    <Content Include="Admin\assets\css\fontawesome.css" />
+    <Content Include="Admin\assets\css\owl.css" />
+    <Content Include="Admin\assets\css\style.css" />
+    <Content Include="Admin\assets\fonts\flexslider-icon.svg" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\assets\fonts\slick.svg" />
+    <Content Include="Admin\assets\images\about-1-570x350.jpg" />
+    <Content Include="Admin\assets\images\about-fullscreen-image-1-1920x600.jpg" />
+    <Content Include="Admin\assets\images\banner-image-1-1920x500.jpg" />
+    <Content Include="Admin\assets\images\blog-image-1-940x460.jpg" />
+    <Content Include="Admin\assets\images\blog-image-2-940x460.jpg" />
+    <Content Include="Admin\assets\images\blog-image-3-940x460.jpg" />
+    <Content Include="Admin\assets\images\blog-image-fullscren-1-1920x700.jpg" />
+    <Content Include="Admin\assets\images\client-01.png" />
+    <Content Include="Admin\assets\images\product-1-720x480.jpg" />
+    <Content Include="Admin\assets\images\product-2-720x480.jpg" />
+    <Content Include="Admin\assets\images\product-3-720x480.jpg" />
+    <Content Include="Admin\assets\images\product-4-720x480.jpg" />
+    <Content Include="Admin\assets\images\product-5-720x480.jpg" />
+    <Content Include="Admin\assets\images\product-6-720x480.jpg" />
+    <Content Include="Admin\assets\images\slider-image-1-1920x900.jpg" />
+    <Content Include="Admin\assets\images\slider-image-2-1920x900.jpg" />
+    <Content Include="Admin\assets\images\slider-image-3-1920x900.jpg" />
+    <Content Include="Admin\assets\images\team-image-1-646x680.jpg" />
+    <Content Include="Admin\assets\images\team-image-2-646x680.jpg" />
+    <Content Include="Admin\assets\images\team-image-3-646x680.jpg" />
+    <Content Include="Admin\assets\js\accordions.js" />
+    <Content Include="Admin\assets\js\custom.js" />
+    <Content Include="Admin\assets\js\owl.js" />
+    <Content Include="Admin\assets\js\slick.js" />
+    <Content Include="Admin\blog-details.html" />
+    <Content Include="Admin\blog.html" />
+    <Content Include="Admin\car-details.html" />
+    <Content Include="Admin\cars.html" />
+    <Content Include="Admin\contact.html" />
+    <Content Include="Admin\Contact_Us.aspx" />
+    <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\faq.html" />
+    <Content Include="Admin\index.html" />
+    <Content Include="Admin\Order_Page.aspx" />
+    <Content Include="Admin\team.html" />
+    <Content Include="Admin\terms.html" />
+    <Content Include="Admin\testimonials.html" />
+    <Content Include="Admin\User_page.aspx" />
+    <Content Include="Admin\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Admin\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Admin\vendor\jquery\jquery.js" />
+    <Content Include="Admin\vendor\jquery\jquery.min.js" />
+    <Content Include="Admin\vendor\jquery\jquery.slim.js" />
+    <Content Include="Admin\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Admin\WebForm1.aspx" />
+    <Content Include="App_Data\Admin.mdf" />
+    <Content Include="App_Data\Admin_log.ldf">
+      <DependentUpon>Admin.mdf</DependentUpon>
+    </Content>
+    <Content Include="assets\css\flex-slider.css" />
+    <Content Include="assets\css\fontawesome.css" />
+    <Content Include="assets\css\owl.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\flexslider-icon.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\slick.svg" />
+    <Content Include="assets\images\about-1-570x350.jpg" />
+    <Content Include="assets\images\about-fullscreen-image-1-1920x600.jpg" />
+    <Content Include="assets\images\banner-image-1-1920x500.jpg" />
+    <Content Include="assets\images\blog-image-1-940x460.jpg" />
+    <Content Include="assets\images\blog-image-2-940x460.jpg" />
+    <Content Include="assets\images\blog-image-3-940x460.jpg" />
+    <Content Include="assets\images\blog-image-fullscren-1-1920x700.jpg" />
+    <Content Include="assets\images\client-01.png" />
+    <Content Include="assets\images\product-1-720x480.jpg" />
+    <Content Include="assets\images\product-2-720x480.jpg" />
+    <Content Include="assets\images\product-3-720x480.jpg" />
+    <Content Include="assets\images\product-4-720x480.jpg" />
+    <Content Include="assets\images\product-5-720x480.jpg" />
+    <Content Include="assets\images\product-6-720x480.jpg" />
+    <Content Include="assets\images\slider-image-1-1920x900.jpg" />
+    <Content Include="assets\images\slider-image-2-1920x900.jpg" />
+    <Content Include="assets\images\slider-image-3-1920x900.jpg" />
+    <Content Include="assets\images\team-image-1-646x680.jpg" />
+    <Content Include="assets\images\team-image-2-646x680.jpg" />
+    <Content Include="assets\images\team-image-3-646x680.jpg" />
+    <Content Include="assets\js\accordions.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\owl.js" />
+    <Content Include="assets\js\slick.js" />
+    <Content Include="blog-details.html" />
+    <Content Include="blog.html" />
+    <Content Include="car-details.html" />
+    <Content Include="Car.aspx" />
+    <Content Include="contact.html" />
+    <Content Include="Daskboard.aspx" />
+    <Content Include="faq.html" />
+    <Content Include="index.html" />
+    <Content Include="Order.aspx" />
+    <Content Include="team.html" />
+    <Content Include="terms.html" />
+    <Content Include="testimonials.html" />
+    <Content Include="User_Login.aspx" />
+    <Content Include="User_Ragister.aspx" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\jquery\jquery.slim.js" />
+    <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Addcat.aspx.cs">
+      <DependentUpon>Addcat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Addcat.aspx.designer.cs">
+      <DependentUpon>Addcat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin.cs" />
+    <Compile Include="Admin\Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_Ragisterr.aspx.cs">
+      <DependentUpon>Admin_Ragisterr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_Ragisterr.aspx.designer.cs">
+      <DependentUpon>Admin_Ragisterr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Contact_Us.aspx.cs">
+      <DependentUpon>Contact_Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Contact_Us.aspx.designer.cs">
+      <DependentUpon>Contact_Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Order_Page.aspx.cs">
+      <DependentUpon>Order_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Order_Page.aspx.designer.cs">
+      <DependentUpon>Order_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\User_page.aspx.cs">
+      <DependentUpon>User_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\User_page.aspx.designer.cs">
+      <DependentUpon>User_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Car.aspx.cs">
+      <DependentUpon>Car.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Car.aspx.designer.cs">
+      <DependentUpon>Car.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Daskboard.aspx.cs">
+      <DependentUpon>Daskboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Daskboard.aspx.designer.cs">
+      <DependentUpon>Daskboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Login.aspx.cs">
+      <DependentUpon>User_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Login.aspx.designer.cs">
+      <DependentUpon>User_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Ragister.aspx.cs">
+      <DependentUpon>User_Ragister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Ragister.aspx.designer.cs">
+      <DependentUpon>User_Ragister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\flexslider-icon.eot" />
+    <Content Include="assets\fonts\flexslider-icon.ttf" />
+    <Content Include="assets\fonts\flexslider-icon.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\slick.eot" />
+    <Content Include="assets\fonts\slick.ttf" />
+    <Content Include="assets\fonts\slick.woff" />
+    <Content Include="Admin\Site2.Master" />
+    <Content Include="Admin\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Admin\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Admin\vendor\jquery\jquery.min.map" />
+    <Content Include="Admin\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Admin\assets\fonts\Flaticon.woff" />
+    <Content Include="Admin\assets\fonts\flexslider-icon.eot" />
+    <Content Include="Admin\assets\fonts\flexslider-icon.ttf" />
+    <Content Include="Admin\assets\fonts\flexslider-icon.woff" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Admin\assets\fonts\FontAwesome.otf" />
+    <Content Include="Admin\assets\fonts\slick.eot" />
+    <Content Include="Admin\assets\fonts\slick.ttf" />
+    <Content Include="Admin\assets\fonts\slick.woff" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="vendor\jquery\jquery.min.map" />
+    <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Images\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12018</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44379/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
